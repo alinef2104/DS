@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 5</title>
+</head>
+
+<body>
+    <script>
+        class Filme {
+            constructor(titulo, genero, duracao) {
+                this.titulo = titulo;
+                this.genero = genero;
+                this.duracao = duracao;
+            }
+
+            informacaoFilme(){
+                return ("Titulo: " + this.titulo + "\n Genero: " + this.genero + "\n Duracao: " + this.duracao) 
+            }
+        }
+
+        let Filme1 = new Filme("Coraline", "Suspense", "1h30");
+
+        console.log(Filme1);       
+        console.log(`Informações do Filme: \n ${Filme1.informacaoFilme()}`);
+    </script>
+    
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 4</title>
+</head>
+
+<body>
+    <script>
+        class Celular {
+            constructor(marca, modelo, armazenamento) {
+                this.marca = marca;
+                this.modelo = modelo;
+                this.armazenamento = armazenamento;
+            }
+
+            informacaoCelular(){
+                return ("Marca: " + this.marca + "\n Modelo: " + this.modelo + "\n Armazenamento: " + this.armazenamento) 
+            }
+        }
+
+        let Celular1 = new Celular("Sansung", "A03", "64G");
+
+        console.log(Celular1);       
+        console.log(`Informações do celular: \n ${Celular1.informacaoCelular()}`);
+    </script>
+    
+</body>
+
+</html>
